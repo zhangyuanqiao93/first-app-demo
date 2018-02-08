@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
 
 /**
+ *用户控制层
  *
  */
 @RestController
@@ -36,16 +36,6 @@ public class UserController {
         if(userRepository.save(userEntity)){
             System.out.printf("用户对象：%s 保存成功！\n",userEntity);
         }
-
         return userEntity;
-    }
-
-    /**
-     * 返回所有用户列表
-     * @return
-     */
-    public List<UserEntity> findAll(){
-        //return userRepository.values();
-        return null;
     }
 }

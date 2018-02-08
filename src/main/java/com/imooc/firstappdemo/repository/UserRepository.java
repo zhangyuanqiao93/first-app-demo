@@ -3,6 +3,7 @@ package com.imooc.firstappdemo.repository;
 import com.imooc.firstappdemo.entity.UserEntity;
 import org.springframework.stereotype.Repository;
 
+import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -12,7 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 
 @Repository
-public class UserRepository {
+public class UserRepository implements UserRepository1 {
     /**
      * 采用内存型的存储方式-->Map
      */
@@ -32,6 +33,15 @@ public class UserRepository {
         //ID从1开始
         Integer id = idGenerator.incrementAndGet();
         userEntity.setId(id);
-        return repository.put(id,userEntity)==null;
+        return repository.put(id,userEntity)== null;
+    }
+
+    /**
+     * 获取所有用户
+     * @return 返回所有用户
+     */
+    @Override
+    public Collection<UserEntity> findAll() {
+        return repository.values();
     }
 }
