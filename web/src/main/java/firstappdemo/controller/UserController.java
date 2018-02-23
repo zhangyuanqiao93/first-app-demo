@@ -1,8 +1,8 @@
-package com.imooc.firstappdemo.controller;
+package firstappdemo.controller;
 
 
-import com.imooc.firstappdemo.entity.UserEntity;
-import com.imooc.firstappdemo.repository.UserRepository;
+import firstappdemo.entity.UserEntity;
+import firstappdemo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;

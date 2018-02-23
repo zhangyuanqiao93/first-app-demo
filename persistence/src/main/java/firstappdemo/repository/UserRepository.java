@@ -1,6 +1,6 @@
-package com.imooc.firstappdemo.repository;
+package firstappdemo.repository;
 
-import com.imooc.firstappdemo.entity.UserEntity;
+import firstappdemo.entity.UserEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;

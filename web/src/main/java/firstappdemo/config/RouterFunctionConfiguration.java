@@ -1,7 +1,7 @@
-package com.imooc.firstappdemo.config;
+package firstappdemo.config;
 
-import com.imooc.firstappdemo.entity.UserEntity;
-import com.imooc.firstappdemo.repository.UserRepository;
+import firstappdemo.entity.UserEntity;
+import firstappdemo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

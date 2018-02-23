@@ -1,4 +1,4 @@
-package com.imooc.firstappdemo.entity;
+package firstappdemo.entity;
 
 
 /**
